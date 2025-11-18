@@ -12,7 +12,7 @@ import os
 from pathlib import Path
 
 # === CONFIG ===
-MODEL_PATH = "cheerios_soup_candle_yolov7.pt"
+MODEL_PATH = "yolov7-tiny.pt"
 IMG_SIZE = 640
 CONF_THRESHOLD = 0.25
 IOU_THRESHOLD = 0.45
@@ -134,4 +134,5 @@ if uploaded_file is not None:
         else:
             st.success(f"Found {len(boxes)} object(s)!")
 else:
+
     st.info("Please upload an image to get started.")
